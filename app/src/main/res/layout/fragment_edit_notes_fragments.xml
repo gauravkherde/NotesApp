@@ -3,12 +3,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ui.Fragments.EditNotesFragments">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:layout_marginTop="10dp"
+            android:id="@+id/EdtTitle"
+            android:background="@drawable/edit_txt_shape"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/white">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subtitle..."
+            android:layout_marginTop="10dp"
+            android:id="@+id/EdtSubtitle"
+            android:background="@drawable/edit_txt_shape"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/white">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/pRed"
+                android:background="@drawable/red_dot">
+            </ImageView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/pYellow"
+                android:background="@drawable/yellow_dot">
+            </ImageView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/pGreen"
+                android:background="@drawable/green_dot">
+            </ImageView>
+
+
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:hint="Notes..."
+            android:layout_marginTop="10dp"
+            android:id="@+id/EdtNotes"
+            android:gravity="start"
+            android:background="@drawable/edit_txt_shape"
+            android:padding="15dp"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/white">
+        </EditText>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnEditSaveNote"
+        android:layout_margin="26dp"
+        android:src="@drawable/ic_baseline_done_24"
+        android:backgroundTint="@color/red_color"
+        android:layout_gravity="bottom|right">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </FrameLayout>
