@@ -9,7 +9,7 @@
         android:layout_height="5dp"
         android:background="#A8A8A8"
         android:layout_gravity="center"
-        android:layout_margin="10dp"></View>
+        android:layout_margin="10dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
