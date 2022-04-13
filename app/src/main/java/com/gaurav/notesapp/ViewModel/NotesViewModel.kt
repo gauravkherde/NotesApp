@@ -12,7 +12,7 @@ class NotesViewModel(application: Application):AndroidViewModel(application) {
     val repository : NotesRepository
 
     init {
-        val dao=NotesDatabase.getDatabaseinstance(application).myNotesDao()
+        val dao= NotesDatabase.getDatabaseinstance(application).myNotesDao()
         repository=NotesRepository(dao)
     }
 

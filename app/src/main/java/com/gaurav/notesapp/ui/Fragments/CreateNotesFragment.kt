@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.Navigation
 import com.gaurav.notesapp.Model.Notes
 import com.gaurav.notesapp.R
 import com.gaurav.notesapp.ViewModel.NotesViewModel
@@ -20,7 +21,7 @@ class CreateNotesFragment : Fragment() {
 
     lateinit var binding: FragmentCreateNotesBinding
     var priority: String = "1"
-    val viewmidel: NotesViewModel by viewModels()
+    val viewmodel: NotesViewModel by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -77,9 +78,10 @@ class CreateNotesFragment : Fragment() {
             date = notesdate.toString(),
             priority
         )
-        viewmidel.addNotes(data)
+        viewmodel.addNotes(data)
         Toast.makeText(requireContext(), "Notes  created successfully ", Toast.LENGTH_LONG).show()
 
+        Navigation.findNavController(it!!).navigate(R.id.action_createNotesFragment_to_homeFragment)
 
 
     }
