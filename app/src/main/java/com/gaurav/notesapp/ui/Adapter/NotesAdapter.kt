@@ -13,7 +13,13 @@ import com.gaurav.notesapp.databinding.ItemsNotesBinding
 import com.gaurav.notesapp.ui.Fragments.HomeFragment
 import com.gaurav.notesapp.ui.Fragments.HomeFragmentDirections
 
-class NotesAdapter(val requireContext: Context,val  notesList: List<Notes>) :RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
+class NotesAdapter(val requireContext: Context,var  notesList: List<Notes>) :RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
+
+    fun filtering(newfilterlist: ArrayList<Notes>) {
+        notesList=newfilterlist
+        notifyDataSetChanged()
+    }
+
     class notesViewHolder(val binding: ItemsNotesBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): notesViewHolder {
