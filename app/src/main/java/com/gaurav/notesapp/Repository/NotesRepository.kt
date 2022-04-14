@@ -9,6 +9,16 @@ class NotesRepository(val dao :NotesDao) {
     fun getallNotes():LiveData<List<Notes>>{
         return dao.getNotes()
     }
+    fun getlowNotes():LiveData<List<Notes>>{
+        return dao.getLowNotes()
+    }
+    fun getmediumNotes():LiveData<List<Notes>>{
+        return dao.getMediumNotes()
+    }
+    fun gethighNotes():LiveData<List<Notes>>{
+        return dao.getHighNotes()
+    }
+
 
     fun insertNotes(notes: Notes)
     {

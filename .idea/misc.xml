@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gaurav/Desktop/Andriod/NotesApp/app/src/main/res/drawable/btnfilershape.xml" value="0.16" />
+        <entry key="..\:/Users/Gaurav/Desktop/Andriod/NotesApp/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Gaurav/Desktop/Andriod/NotesApp/app/src/main/res/layout/fragment_edit_notes_fragments.xml" value="0.15052083333333333" />
+        <entry key="..\:/Users/Gaurav/Desktop/Andriod/NotesApp/app/src/main/res/layout/fragment_home.xml" value="0.15052083333333333" />
         <entry key="..\:/Users/Gaurav/Desktop/Andriod/NotesApp/app/src/main/res/layout/items_notes.xml" value="0.17255434782608695" />
       </map>
     </option>
